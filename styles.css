@@ -1,0 +1,279 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background:
+    url(/assets/images/bg.png) no-repeat center center,
+    /* รูปภาพพื้นหลัง */
+    linear-gradient(140deg, #2A2438, #5b5861, #352F44);
+  /* ไล่ระดับสี */
+  background-size: cover;
+  background-blend-mode: overlay;
+  /* ผสมรูปภาพและสี */
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  background:
+    url(/assets/images/bg.png) no-repeat center center,
+    /* รูปภาพพื้นหลัง */
+    linear-gradient(140deg, #191323, #302e35, #221d30);
+  /* ไล่ระดับสี */
+  background-size: cover;
+  background-blend-mode: overlay;
+  /* ผสมรูปภาพและสี */
+  backdrop-filter: blur(30px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  width: 90%;
+  font-family: "Lilita One", serif;
+  margin: 0 auto;
+  margin: auto;
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.score-container {
+
+  display: flex;
+  /* จัดเรียงในแนวนอน */
+  align-items: center;
+  /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  gap: 20px;
+  /* เว้นระยะห่างระหว่างไอเท็ม */
+  padding: 10px;
+  /* เพิ่มพื้นที่ภายใน */
+  border: 1px solid #ccc;
+  /* เส้นขอบเพื่อแสดงพื้นที่ */
+  border-radius: 10px;
+  /* ทำมุมโค้งมน */
+  justify-content: center;
+}
+
+.img-display img {
+  display: block;
+  
+}
+
+.score {
+  margin: 20px 0;
+  font-size: 1.2em;
+  padding: 10px;
+
+}
+
+#player-score,
+#computer-score {
+  margin: 20px 0;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+
+
+.image-button:hover {
+  background: #aca1c2;
+  transform: scale(1.1);
+}
+
+.image-button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  font-family: "Lilita One", serif;
+}
+
+
+#computer-image {
+  transform: scaleX(-1);
+  /* การสะท้อนภาพในแนวนอน */
+}
+
+
+.result-container img {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  padding: 20px;
+
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 35px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.reset-btn {
+  background: #2A2438;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Lilita One", serif;
+}
+
+.reset-btn:hover {
+  background: #DBD8E3;
+  color: #2A2438;
+  transform: scale(1.05);
+}
+
+
+.wrapper {
+  align-content: center;
+  width: 100%;
+  padding: 25px 25px;
+
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-container {
+  border-radius: 10px;
+}
+
+.text-container h1 {
+  color: #352F44;
+  font-size: 80px;
+  font-family: "Rubik Vinyl", sans-serif;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
+  animation: moveColorh1 4s infinite;
+}
+
+@keyframes moveColorh1 {
+
+  0%,
+  100% {
+    color: #352F44;
+  }
+
+  50% {
+    color: #DBD8E3;
+    /* เปลี่ยนสีระหว่างยืด */
+  }
+}
+
+.text-container .paper {
+  animation: moveColorPaper 4s infinite;
+}
+
+
+@keyframes moveColorPaper {
+
+  0%,
+  100% {
+
+    color: #DBD8E3;
+  }
+
+  50% {
+
+    color: #352F44;
+    /* เปลี่ยนสีระหว่างยืด */
+  }
+}
+
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.img-container {
+  background-color: #DBD8E3;
+  padding: 5px 45px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.img-logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+}
+
+/* ปุ่มพื้นฐาน */
+.start-btn {
+  background-color: #5C5470;
+  color: #DBD8E3;
+  font-family: "Rubik Vinyl", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  font-size: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  /* ป้องกันไม่ให้เนื้อหาล้น */
+  animation: textStretch 1.5s infinite ease-in-out;
+  /* เรียกใช้แอนิเมชัน */
+}
+
+/* สร้างแอนิเมชัน */
+@keyframes textStretch {
+
+  0%,
+  100% {
+    letter-spacing: 1px;
+    /* ระยะห่างเริ่มต้น */
+    transform: scale(1);
+    /* ขนาดปกติ */
+  }
+
+  50% {
+    letter-spacing: 5px;
+    /* ยืดตัว */
+    transform: scale(1.1);
+    /* ขยายปุ่มเล็กน้อย */
+  }
+}
