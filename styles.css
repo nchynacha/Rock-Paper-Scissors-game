@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   background:
-    url(/assets/images/bg.png) no-repeat center center,
+    url(./assets/images/bg.png) no-repeat center center,
     /* รูปภาพพื้นหลัง */
     linear-gradient(140deg, #2A2438, #5b5861, #352F44);
   /* ไล่ระดับสี */
@@ -28,7 +28,7 @@ body {
 
 .game-container {
   background:
-    url(/assets/images/bg.png) no-repeat center center,
+    url(./assets/images/bg.png) no-repeat center center,
     /* รูปภาพพื้นหลัง */
     linear-gradient(140deg, #191323, #302e35, #221d30);
   /* ไล่ระดับสี */
