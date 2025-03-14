@@ -59,8 +59,8 @@ function playGame(playerChoice: Choice): void {
   const computerImageElement = document.getElementById("computer-image") as HTMLImageElement;
 
   if (playerImageElement && computerImageElement) {
-    playerImageElement.src = `/assets/images/${playerChoice}.png`;  // รูปของผู้เล่น
-    computerImageElement.src = `/assets/images/${computerChoice}.png`;  // รูปของคอมพิวเตอร์
+    playerImageElement.src = `./assets/images/${playerChoice}.png`;  // รูปของผู้เล่น
+    computerImageElement.src = `./assets/images/${computerChoice}.png`;  // รูปของคอมพิวเตอร์
   }
 }
 
