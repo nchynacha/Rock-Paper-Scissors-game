@@ -49,8 +49,8 @@ function playGame(playerChoice) {
     var playerImageElement = document.getElementById("player-image");
     var computerImageElement = document.getElementById("computer-image");
     if (playerImageElement && computerImageElement) {
-        playerImageElement.src = "/assets/images/".concat(playerChoice, ".png"); // รูปของผู้เล่น
-        computerImageElement.src = "/assets/images/".concat(computerChoice, ".png"); // รูปของคอมพิวเตอร์
+        playerImageElement.src = "./assets/images/".concat(playerChoice, ".png"); // รูปของผู้เล่น
+        computerImageElement.src = "./assets/images/".concat(computerChoice, ".png"); // รูปของคอมพิวเตอร์
     }
 }
 // ฟังก์ชันรีเซ็ตเกม
