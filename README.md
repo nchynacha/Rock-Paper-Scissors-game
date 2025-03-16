@@ -38,3 +38,15 @@ This is a simple implementation of the game where users can play against the com
 <img src="https://github.com/nchynacha/Rock-Paper-Scissors-game/blob/main/assets/images/result.png" alt="photo gallery" width="900" height="500">
 </p>
 <br>
+
+
+<p align="center" >
+<span>
+    Check out my 
+    <a href="https://nchynacha.github.io/Rock-Paper-Scissors-game/" style="font-size: 24px; font-weight: bold; text-decoration: none; color: inherit; font-family: Arial, sans-serif;">
+      <strong>LIVE DEMO</strong>
+    </a>
+    to play Rock-Paper-Scissors GAME.
+  </span>
+</p>
+
